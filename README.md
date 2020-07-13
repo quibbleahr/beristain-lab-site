@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Beristain Lab Website
+
+This repo is the source code for the website for Beristain Lab at [BC Children's Hospital](https://bcchr.ca/). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). See [`package.json`](https://github.com/quibbleahr/beristain-lab-site/blob/master/package.json) for all dependencies and requirements to run the code.
 
 ## Available Scripts
 
