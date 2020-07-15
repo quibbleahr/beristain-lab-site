@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import HomePage from './pages/HomePage';
+import MenuBar from './components/MenuBar';
 
 class App extends React.Component {
   constructor(props) {
