@@ -26,28 +26,56 @@ const styles = theme => ({
 
   inputWriting: {
       color: '#E5E5E5'
+  },
+
+  menubar: {
+    opacity: '95%',
+    backgroundColor: 'black',
+    height: '60px'
+  },
+
+menubarItem: {
+    color: 'white',
+    marginRight: '30%',
+    marginLeft: '30%',
+    ':hover': {
+        opacity: '90%'
+    }
   }
+
 });
 
 class MenuBar extends React.Component {
-  state = {
-    name: 'Search...',
-  };
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: 'Search...',
+            headerLinks: [...this.props.headerLinks]
+        };
+    }
 
-  handleChange = name => event => {
-    this.setState({
-      [name]: event.target.value,
-    });
-  };
-  render() {
-    const { classes } = this.props;
+    handleChange = name => event => {
+        this.setState({
+        [name]: event.target.value,
+        });
+    };
+
+    makeMenuItems = (items) => {
+        return items.map(item => {
+            return (
+                <div className="menubarItem mr-auto">
+                    <Nav.Link href={item.path}>{item.title}</Nav.Link>
+                </div>);
+        })
+    }
+
+    render() {
+        const { classes } = this.props;
 
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar variant="dark" className={classes.menubar}>
             <Nav className="navbar-marg mr-auto">
-                <Nav.Link className="nav-item" href="/home">HOME</Nav.Link>
-                <Nav.Link className="nav-item" href="/people">PEOPLE</Nav.Link>
-                <Nav.Link className="nav-item" href="/contact">CONTACT</Nav.Link>
+                {this.makeMenuItems(this.state.headerLinks)}
             </Nav>
         <TextField
           id="standard-name"

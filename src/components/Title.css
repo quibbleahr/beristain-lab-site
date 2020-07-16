@@ -3,8 +3,8 @@
     width: 100%;
     display: flex;
     padding: 1em;
-    border-bottom: 5px solid black;
     color: black;
+    background-color: whitesmoke;
   }
 
 .socials {
@@ -20,14 +20,21 @@
   size: 100;
 }
 
-.button {
-  background-color: black;
+.menubarItem {
+  font-size: 14pt;
   color: white;
+  height: 60px;
+  line-height: 40px;
+  padding-left: 3em;
+  padding-right: 3em;
+  align-items: center;
+  justify-content: center;
+  
 }
 
-.nav-item {
-  margin-right: 30%;
-  margin-left: 30%;
+.menubarItem:hover {
+  background-color: #383838;
+  opacity: 90%;
 }
 
 .navbar-marg {

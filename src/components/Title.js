@@ -13,8 +13,8 @@ function Title(props) {
           <Container fluid={true}>
               <Row>
                   <Col md={9} sm={12}>
-                      <h1>{props.name}</h1>
-                      <h4>BC Children's Hospital</h4>
+                      <h1>{props.title}</h1>
+                      <h4>{props.subtitle}</h4>
                   </Col>
                   <Col md={3} sm={12} className="d-flex align-items-center justify-content-end"><Socials/></Col>
               </Row>
