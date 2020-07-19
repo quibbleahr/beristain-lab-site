@@ -1,8 +1,9 @@
 .container {
-    padding: 40px;
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%);
+    padding: 0;
+    overflow: hidden;
+    z-index: -1;
+    max-width: 100%;
+    padding-bottom: 30px;
 }
   
 .slick-slide img {
@@ -14,6 +15,20 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
-}
+    color: black;
+}   
   
+.slick-next {
+    right: 25px;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    line-height: 20px;
+}

@@ -1,0 +1,45 @@
+.footy {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.footer-one {
+    background-color: #EAEAEA;
+    padding-right: 50px;
+    padding-left: 80px;
+
+}
+
+.footer-two {
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.lab-lead-img {
+    margin-bottom: -200px;
+}
+
+.widget {
+    margin: 0 0 1.5em;
+}
+
+.caption {
+    border-top: 1px solid #EAEAEA;
+    background-color: white;
+    box-shadow: 2px;
+    border-radius: 0 0 5px 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.col-footy {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+}

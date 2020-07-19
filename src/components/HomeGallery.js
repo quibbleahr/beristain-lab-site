@@ -10,8 +10,8 @@ class HomeGallery extends React.Component {
     render() {
         const settings = {
             dots: true,
+            dotsClass: "slick-dots slick-thumb",
             centerMode: true,
-            centerPadding: 0,
             infinite: true,
             slidesToShow: 1,
             speed: 500,
@@ -22,18 +22,16 @@ class HomeGallery extends React.Component {
         return(
             <div className="container">
                 <Slider {...settings}>
-                <div>
-                    <img src="https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg" />
-                </div>
-                <div>
-                    <img src="https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg" />
-                </div>
-                <div>
-                    <img src="https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg" />
-                </div>
-                <div>
-                    <img src="https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg" />
-                </div>
+                    <div>
+                        <img src="https://olsenlab.mit.edu/wp-content/uploads/sites/45/2019/06/2019grad1-1600x500.jpg" />
+                    </div>
+                    <div>
+                        <img src="https://olsenlab.mit.edu/wp-content/uploads/sites/45/2019/06/2019grad1-1600x500.jpg" />
+                    </div>
+                    <div>
+                        <img src="https://olsenlab.mit.edu/wp-content/uploads/sites/45/2019/06/2019grad1-1600x500.jpg" />
+                    </div>
+                    
                 </Slider>
             </div>
         );

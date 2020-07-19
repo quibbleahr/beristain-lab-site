@@ -31,7 +31,9 @@ const styles = theme => ({
   menubar: {
     opacity: '95%',
     backgroundColor: 'black',
-    height: '60px'
+    height: '60px',
+    borderBottom: '1px solid white',
+    borderTop: '1px solid white'
   },
 
 menubarItem: {

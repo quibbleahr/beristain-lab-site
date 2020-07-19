@@ -35,6 +35,9 @@
 .menubarItem:hover {
   background-color: #383838;
   opacity: 90%;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+
 }
 
 .navbar-marg {

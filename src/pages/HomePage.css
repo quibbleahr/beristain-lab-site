@@ -2,4 +2,15 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
+
+.container {
+    background-color: white;
+}
+
+.summary {
+    border: 5px solid black;
+    padding: 40px;
+}
+
